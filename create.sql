@@ -1,16 +1,6 @@
 
 CREATE DATABASE Sport_Competition IF NOT EXISTS;
 
-DROP TABLE IF EXISTS Club CASCADE;
-DROP TABLE IF EXISTS Country CASCADE;
-DROP TABLE IF EXISTS Disciplin CASCADE;
-DROP TABLE IF EXISTS GeographicLevel CASCADE;
-DROP TABLE IF EXISTS TechnicalData CASCADE;
-DROP TABLE IF EXISTS Jury CASCADE;
-DROP TABLE IF EXISTS Athlete CASCADE;
-DROP TABLE IF EXISTS Competition CASCADE;
-DROP TABLE IF EXISTS Startlist CASCADE;
-
 DROP TABLE IF EXISTS Startlist;
 DROP TABLE IF EXISTS Competition;
 DROP TABLE IF EXISTS Athlete;
@@ -23,22 +13,22 @@ DROP TABLE IF EXISTS Jury;
 
 
 CREATE TABLE Club  (
-    ClubId                  INT             NOT NUll,
+    ClubId                  INT             NOT NUll            UNIQUE          AUTO_INCREMENT,
     ClubName                VARCHAR(50)     NOT NULL
 );
 
 CREATE TABLE Country (
-    CountryId               INT             NOT NUll,
+    CountryId               INT             NOT NUll            UNIQUE          AUTO_INCREMENT,
     CountryName             VARCHAR(30)     NOT NULL
 );
 
 CREATE TABLE Disciplin  (
-    DisciplinId             INT             NOT NULL,
+    DisciplinId             INT             NOT NULL            UNIQUE          AUTO_INCREMENT,
     DisciplinName           VARCHAR(30)     NOT NULL   
 );
 
 CREATE TABLE GeographicLevel  (
-    GeographicCode          INT             NOT NULL,
+    GeographicCode          INT             NOT NULL            UNIQUE          AUTO_INCREMENT,
     GeographicLevel         VARCHAR(50)     NOT NULL     
 );
 
@@ -52,7 +42,7 @@ CREATE TABLE TechnicalData  (
 );
 
 CREATE TABLE Jury  (
-    JuryId                  INT             NOT NULL,
+    JuryId                  INT             NOT NULL            UNIQUE          AUTO_INCREMENT,
     TechnicalDelegate       VARCHAR(30)     NOT NULL,
     Referee                 VARCHAR(30)     NOT NULL,
     ChiefOfRace             VARCHAR(30)     NOT NULL
@@ -85,3 +75,15 @@ CREATE TABLE Startlist (
     CompetitionId           INT             NOT NULL,
     FISCode                 INT             NOT NULL
 )
+UPDATE Athlete
+SET GSPoints=41.02
+WHERE FISCode=502443;
+
+
+CREATE TABLE JuryLogTable(
+    id                      INT             NOT NULL            UNIQUE          AUTO_INCREMENT,
+    times					TIME,
+    dates					DATE,
+    method					VARCHAR(20)
+);
+

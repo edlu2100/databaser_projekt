@@ -40,8 +40,8 @@ DELETE FROM Startlist WHERE FISCode=502443 AND CompetitionId=1;
 -- 14. Ändra TechnicalDelegate till Emil Svanberg där Juryid är 3.
 UPDATE Jury SET TechnicalDelegate = 'Svanberg Emil' WHERE JuryId=3;
 
--- 15. 
-ALTER TABLE Club AUTO_INCREMENT=11;
+-- 15. Lägg till ett nytt värde med auto increment (Fattade inte vad frågan innebar. Om man skulle lägga till det till en kolumn eller ett nytt värde)
+INSERT INTO Club VALUES (NULL, 'Sollentuna SLK'); -- La till ett nytt värde. Har redan kolumner med auto_increment
 
 
 

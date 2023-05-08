@@ -2,47 +2,47 @@
 
 -- Inserts into club
 INSERT INTO Club VALUES 
-(1, 'Kalix Ak'),
-(2, 'Luleå Ak'),
-(3, 'Sundsvall SLK'),
-(4, 'Östersund-Frösö SLK'),
-(5, 'Täby SLK'),
-(6, 'Bollnäs alpina'),
-(7, 'Ragunda SLK'),
-(8, 'Baerums Skiklub'),
-(9, 'Lommedalens IL'),
-(10, 'Sporting Gottardo');
+(NULL, 'Kalix Ak'),
+(NULL, 'Luleå Ak'),
+(NULL, 'Sundsvall SLK'),
+(NULL, 'Östersund-Frösö SLK'),
+(NULL, 'Täby SLK'),
+(NULL, 'Bollnäs alpina'),
+(NULL, 'Ragunda SLK'),
+(NULL, 'Baerums Skiklub'),
+(NULL, 'Lommedalens IL'),
+(NULL, 'Sporting Gottardo');
 
 
 -- Inserts into Country
 INSERT INTO Country VALUES 
-(1, 'Sweden'),
-(2, 'Norway'),
-(3, 'Finland'),
-(4, 'Austria'),
-(5, 'Germany'),
-(6, 'Switzerland');
+(NULL, 'Sweden'),
+(NULL, 'Norway'),
+(NULL, 'Finland'),
+(NULL, 'Austria'),
+(NULL, 'Germany'),
+(NULL, 'Switzerland');
 
 -- Inserts into Disciplin
 INSERT INTO Disciplin VALUES 
-(1, 'Slalom'),
-(2, 'Giant Slalom'),
-(3, 'Super G'),
-(4, 'Downhill'),
-(5, 'Alpine Combine');
+(NULL, 'Slalom'),
+(NULL, 'Giant Slalom'),
+(NULL, 'Super G'),
+(NULL, 'Downhill'),
+(NULL, 'Alpine Combine');
 
 -- Inserts into Geographic level
 INSERT INTO GeographicLevel VALUES 
-(1, 'FIS'),
-(2, 'ENL'),
-(3, 'World Cup'),
-(4, 'European Cup'),
-(5, 'Far East Cup'),
-(6, 'Nor Am'),
-(7, 'World Championship'),
-(8, 'National Junior Race'),
-(9, 'National Junior Championship'),
-(10, 'National Championship');
+(NULL, 'FIS'),
+(NULL, 'ENL'),
+(NULL, 'World Cup'),
+(NULL, 'European Cup'),
+(NULL, 'Far East Cup'),
+(NULL, 'Nor Am'),
+(NULL, 'World Championship'),
+(NULL, 'National Junior Race'),
+(NULL, 'National Junior Championship'),
+(NULL, 'National Championship');
 
 -- Inserts into TechnicalData
 INSERT INTO TechnicalData VALUES 
@@ -54,11 +54,11 @@ INSERT INTO TechnicalData VALUES
 
 -- Inserts into Jury
 INSERT INTO Jury VALUES 
-(1, 'Svanberg Emil', 'Laitakari Pasi', 'Pelli Mika' ),
-(2, 'Kristinsson Smari', 'Eneflo Calle', 'Holmberg Erika'),
-(3, 'Havnelid Stefan Johnsen', 'Sjoedin Tomas', 'Ericson Thomas'),
-(4, 'Franz Toni', 'Engvoll Marten', 'Jonsson Hampus'),
-(5, 'Rebne Jan Einar', 'Gerdol Peter', 'Angland Lindvall Aase');
+(NULL, 'Svanberg Emil', 'Laitakari Pasi', 'Pelli Mika' ),
+(NULL, 'Kristinsson Smari', 'Eneflo Calle', 'Holmberg Erika'),
+(NULL, 'Havnelid Stefan Johnsen', 'Sjoedin Tomas', 'Ericson Thomas'),
+(NULL, 'Franz Toni', 'Engvoll Marten', 'Jonsson Hampus'),
+(NULL, 'Rebne Jan Einar', 'Gerdol Peter', 'Angland Lindvall Aase');
 
 -- Inserts into Athlete 
 INSERT INTO Athlete VALUES 
