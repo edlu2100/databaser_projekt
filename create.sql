@@ -38,7 +38,6 @@ CREATE TABLE TechnicalData  (
     StartAltitude           INT             NOT NULL,
     EndAltidude             INT             NOT NULL,
     RaceArena               VARCHAR(30)     NOT NULL
-  
 );
 
 CREATE TABLE Jury  (
@@ -75,15 +74,11 @@ CREATE TABLE Startlist (
     CompetitionId           INT             NOT NULL,
     FISCode                 INT             NOT NULL
 )
-UPDATE Athlete
-SET GSPoints=41.02
-WHERE FISCode=502443;
-
 
 CREATE TABLE JuryLogTable(
     id                      INT             NOT NULL            UNIQUE          AUTO_INCREMENT,
-    times					TIME,
-    dates					DATE,
-    method					VARCHAR(20)
+    times					TIME            NOT NULL,
+    dates					DATE            NOT NULL,
+    method					VARCHAR(20)     NOT NULL
 );
 

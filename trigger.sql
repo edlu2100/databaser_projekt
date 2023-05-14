@@ -6,7 +6,7 @@
 
 DELIMITER $$
 
-CREATE TRIGGER JuryTrigger 
+CREATE TRIGGER JuryTrigger
 AFTER DELETE ON Jury
 FOR EACH ROW
 BEGIN
@@ -16,4 +16,4 @@ END $$
 DELIMITER ;
 
 
-CALL Startlist(2);
+DELETE FROM Jury WHERE JuryId=2;
