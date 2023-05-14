@@ -1,5 +1,5 @@
 
-CREATE DATABASE Sport_Competition IF NOT EXISTS;
+CREATE DATABASE Sport_Competition;
 
 DROP TABLE IF EXISTS Startlist;
 DROP TABLE IF EXISTS Competition;
@@ -10,6 +10,7 @@ DROP TABLE IF EXISTS Disciplin;
 DROP TABLE IF EXISTS GeographicLevel;
 DROP TABLE IF EXISTS TechnicalData;
 DROP TABLE IF EXISTS Jury;
+DROP TABLE IF EXISTS JuryLogTable;
 
 
 CREATE TABLE Club  (
@@ -73,7 +74,7 @@ CREATE TABLE Competition  (
 CREATE TABLE Startlist (
     CompetitionId           INT             NOT NULL,
     FISCode                 INT             NOT NULL
-)
+);
 
 CREATE TABLE JuryLogTable(
     id                      INT             NOT NULL            UNIQUE          AUTO_INCREMENT,

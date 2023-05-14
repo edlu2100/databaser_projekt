@@ -46,11 +46,11 @@ INSERT INTO GeographicLevel VALUES
 
 -- Inserts into TechnicalData
 INSERT INTO TechnicalData VALUES 
-(122191116, 'Martii', 420, 175, 245, 'Suomu'),
-(111621213, 'Älvan', 803, 467, 336, 'Stöten'),
-(132761119, 'Mullfjällsbacken', 814, 453, 361, 'Duved'),
-(121461116, 'Anjabacken', 778, 445, 333, 'Tärnaby'),
-(121451116, 'Störtloppet', 796, 396, 400, 'Åre');
+(122191116, 'Martii', 420, 175, 'Suomu'),
+(111621213, 'Älvan', 803, 467, 'Stöten'),
+(132761119, 'Mullfjällsbacken', 814, 453, 'Duved'),
+(121461116, 'Anjabacken', 778, 445, 'Tärnaby'),
+(121451116, 'Störtloppet', 796, 396, 'Åre');
 
 -- Inserts into Jury
 INSERT INTO Jury VALUES 
